@@ -1,16 +1,19 @@
-import React from 'react'
+import React, {Fragment} from 'react';
+import '../Layout/Header.css'
+import ButtonCartHeader from './ButtonCartHeader';
 
+import mealsImage from '../Assets/meals.jpg'
 function Header() {
     return (
-        <nav>
-            <header>
+        <Fragment>
+            <header className="header">
                 <h1>Repas</h1>
-                <button>Cart</button>
+                <ButtonCartHeader />
             </header>
-            <div>
-                <img src />
+            <div className="main-image">
+                <img src={mealsImage} alt="" />
             </div>
-        </nav>
+        </Fragment>
     )
 }
 
